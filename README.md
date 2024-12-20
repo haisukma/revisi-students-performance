@@ -55,7 +55,7 @@ Pada proyek ini telah disediakan sebuah prototype untuk melakukan prediksi terha
 ```
 streamlit run app.py
 ```
-Atau buka pada tautan [berikut](https://newstudents-s-performance-ryhwxmaxkuda3vc6brttm2.streamlit.app/) untuk membuka prototype yang sudah dijalankan pada streamlit community.
+Atau buka pada tautan [berikut](https://revisi-students-performance-5zuzvcwrxldet2cquwprvb.streamlit.app/) untuk membuka prototype yang sudah dijalankan pada streamlit community.
  <img src="https://raw.githubusercontent.com/haisukma/newstudents-s-performance/master/image/sukmaa-prototype.png" width="500">
 
 ## Conclusion
