@@ -12,7 +12,7 @@
 ### Permasalahan Bisnis
 Masalah bisnis yang ingin diselesaikan adalah sebagai berikut:
 1. Bagaimana cara mengidentifikasi mahasiswa yang berpotensi dropout sejak dini?
-2. Apasaja faktor yang menyebabkan siswa tidak menyelesaikan pendidikannya (dropout)?
+2. Apa saja faktor yang menyebabkan siswa tidak menyelesaikan pendidikannya (dropout)?
 3. Tindakan apa yang dapat dilakukan untuk mengurangi mahasiswa dropout dan memastikan lebih banyak mahasisawa yang menyelesaikan pendidikannya?
 
 ### Cakupan Proyek
@@ -34,11 +34,11 @@ Sumber data: dataset yang digunakan merupakan dataset [Jaya Jaya Institut](https
     pip install -r requirements.txt
     ```
 
-
 ## Business Dashboard
 Berikut adalah dashboard yang telah dibuat:
 
-Dashboard ini dirancang untuk memberikan wawasan komprehensif kepada institut terhadap faktor-faktor yang berkontribusi dengan `Status` baik dropout, enrolled, ataupun graduated. Dengan dashboard ini tim institut dapat :
+Dashboard ini dirancang untuk memberikan wawasan komprehensif kepada institut terhadap faktor-faktor yang berkontribusi dengan **Status** baik dropout, enrolled, ataupun graduated. Dengan dashboard ini tim institut dapat :
+
 1. Memantau Tingkat Dropout Secara Proaktif:
     - Melalui visualisasi persentase siswa yang dropout, enrolled, dan graduate, tim dapat memantau tren dropout secara real-time. Ini memungkinkan institusi untuk segera mengambil tindakan jika terlihat ada peningkatan signifikan dalam tingkat dropout.
 
@@ -55,7 +55,8 @@ Pada proyek ini telah disediakan sebuah prototype untuk melakukan prediksi terha
 ```
 streamlit run app.py
 ```
-Atau buka pada tautan [berikut](https://revisi-students-performance-5zuzvcwrxldet2cquwprvb.streamlit.app/) untuk membuka prototype yang sudah dijalankan pada streamlit community.
+👉 [Klik di sini untuk membuka aplikasi](https://revisi-students-performance-5zuzvcwrxldet2cquwprvb.streamlit.app/) 
+
  <img src="https://raw.githubusercontent.com/haisukma/newstudents-s-performance/master/image/sukmaa-prototype.png" width="500">
 
 ## Conclusion
@@ -63,27 +64,15 @@ Proyek ini bertujuan untuk mengatasi masalah utama yang dihadapi Jaya Jaya Insti
 
 1. Bagaimana cara mengidentifikasi siswa yang berpotensi dropout sejak awal?
 
-- Dengan mengembangkan model prediktif berbasis algoritma seperti Random Forest, Desesion Tree maupun algoritma XGBoost Jaya Jaya Institut dapat mengenali siswa yang berisiko dropout lebih dini. Model ini mampu mendeteksi siswa berisiko dengan tingkat akurasi yang baik berdasarkan data historis serta faktor-faktor yang berkaitan.
+- Dengan mengembangkan model prediktif berbasis algoritma seperti Random Forest, Decision Tree, maupun XGBoost, Jaya Jaya Institut dapat mengenali siswa yang berisiko dropout lebih dini. Model ini mampu mendeteksi siswa berisiko dengan tingkat akurasi yang baik berdasarkan data historis serta berbagai faktor yang berkaitan, seperti performa akademik (nilai masuk dan nilai semester), kondisi finansial (status pembayaran dan beasiswa), serta latar belakang pendidikan dan kondisi khusus mahasiswa. Dengan memanfaatkan kombinasi faktor tersebut, institusi dapat melakukan intervensi lebih cepat dan tepat untuk mengurangi tingkat dropout.
   
-2. Apasaja faktor yang menyebabkan siswa tidak menyelesaikan pendidikannya (dropout)?
-- Faktor yang paling berpengaruh terhadap keputusan mahasiswa untuk dropout berdasarkan analisis korelasi dan penilaian fitur dalam model prediktif menunjukkan bahwa latar belakang akademik (seperti nilai dan jumlah mata kuliah yang diambil) serta kondisi ekonomi (seperti beasiswa atau keadaan sosial-ekonomi yang kurang stabil). Contohnya siswa yang mengalami kesulitan akademik pada semester awal cenderung memiliki risiko dropout lebih tinggi.
+2. Apa saja faktor yang menyebabkan siswa tidak menyelesaikan pendidikannya (dropout)?
+   
+- Tingkat dropout mahasiswa dipengaruhi oleh faktor finansial, di mana mahasiswa yang tidak mampu membayar biaya pendidikan atau tidak mendapatkan beasiswa cenderung lebih tinggi untuk dropout. Selain itu, faktor usia juga berpengaruh, dengan mahasiswa yang lebih tua memiliki risiko dropout yang lebih besar karena kemungkinan memiliki tanggung jawab tambahan di luar akademik.
 
  <img src="https://raw.githubusercontent.com/haisukma/newstudents-s-performance/master/image/sukmaa-korelasi.png" width="500">
 
 3. Tindakan apa yang dapat dilakukan untuk mengurangi mahasiswa dropout dan memastikan lebih banyak mahasisawa yang menyelesaikan pendidikannya?
 
-- Jaya Jaya Institut dapat mengurangi mahasiswa dropout dan memastikan lebih banyak mahasisawa yang menyelesaikan pendidikannya dengan beberapa strategi berdasarkan temuan dari model dan analisis data. Hal yang dapat dilakukan dengan menyesuaikan kurikulum untuk mengurangi beban siswa, menyediakan bimbingan akademik yang lebih intensif, dan memberikan dukungan finansial tambahan kepada siswa yang membutuhkan atau berprestasi. Analisa lebih dini dengan data dapat membantu memastikan lebih banyak siswa menyelesaikan pendidikan mereka.
-
-### Rekomendasi Action Items
-Berikan beberapa rekomendasi action items yang harus dilakukan perusahaan guna menyelesaikan permasalahan atau mencapai target mereka.
-Bimbingan Akademik yang Intensif:
-
-1. Sediakan sesi bimbingan akademik lebih intensif, terutama bagi mahasiswa yang berada dalam semester awal dan yang memiliki nilai rendah. Fokus pada memberikan dukungan di bidang yang mereka kesulitan. Mahasiswa yang mengalami masalah akademik dan pribadi, seperti yang tercermin dari faktor status pernikahan, mungkin memerlukan dukungan psikologis lebih besar. Universitas dapat menyediakan layanan konseling atau workshop terkait manajemen stres dan keterampilan belajar
-   
-2. Gunakan data dari analisis dropout (seperti yang terlihat dari marital status, beasiswa, atau hasil akademik) untuk mengidentifikasi mahasiswa berisiko sejak awal. Intervensi dapat dilakukan melalui konseling atau memberikan akses lebih besar ke sumber daya belajar. Buat sistem monitoring berkala untuk melihat perkembangan akademik setiap mahasiswa. Mahasiswa yang terdeteksi mengalami penurunan performa atau memiliki tanda-tanda ingin dropout dapat segera diintervensi dengan cara yang tepat.
-   
-3. Berdasarkan analisis penerima beasiswa, universitas perlu meningkatkan dukungan finansial, terutama bagi mahasiswa dari keluarga dengan kondisi ekonomi sulit. Tambahkan skema beasiswa atau bantuan biaya pendidikan.
-   
-4. Kurangi beban akademik untuk mahasiswa dengan kinerja rendah, terutama di semester awal. Misalnya, menawarkan pilihan untuk mengambil lebih sedikit mata kuliah atau memberikan opsi remedial untuk mata kuliah yang paling sering diambil oleh mahasiswa dropout, seperti yang teridentifikasi di dashboard.
-   
-5. Berdasarkan data mata kuliah yang paling sering diambil mahasiswa dropout (seperti Management dan Nursing), universitas dapat mereview kembali metode pengajaran dan beban kerja pada mata kuliah ini. Ini dapat berupa perubahan metode pengajaran, pengurangan beban kurikulum, atau menawarkan lebih banyak sumber belajar tambahan.
+- Jaya Jaya Institut dapat mengurangi mahasiswa dropout dan memastikan lebih banyak mahasisawa yang menyelesaikan pendidikannya dengan beberapa strategi berdasarkan temuan dari model dan analisis data. Hal yang dapat dilakukan dengan engan menambah kuota program beasiswa, menyediakan skema pembayaran cicilan, dan memberikan peringatan dini untuk mahasiswa yang menunggak. Selain itu, dengan mnyediakan jadwal kuliah fleksibel, program kelas karyawan atau part-time, dan menyediakan dosen pembimbing khusus. Analisa lebih dini dengan data dapat membantu memastikan lebih banyak siswa menyelesaikan pendidikan mereka.
+  
